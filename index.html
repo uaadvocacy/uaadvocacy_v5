@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--SITE SET-UP--!>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jssor.slider.min.js" type="text/javascript"></script>
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if Internet Explorer]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <![end]-->
+<!-- WEBSITE TITLE -->
+    <title>University of Arizona Advocacy</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+        <!-- Example assets -->
+        <link rel="stylesheet" type="text/css" href="jcarousel.basic.css">
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+
+        <script type="text/javascript" src="jcarousel.basic.js"></script>
+<!-- CSS FILE LINKS -->
+    <link href="files/css/bootstrap.css" rel="stylesheet" />
+    <link href="files/css/style.css" rel="stylesheet" />
+<!-- SITE GOOGLE FONT API -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<style>
+	.state{
+		fill: none;
+		stroke: #a9a9a9;
+		stroke-width: 1;
+	}
+	.state:hover{
+		fill-opacity:0.5;
+	}
+	#tooltip {   
+		position: absolute;           
+		text-align: center;
+		padding: 20px;             
+		margin: 10px;
+		font: 12px sans-serif;        
+		background: lightsteelblue;   
+		border: 1px;      
+		border-radius: 2px;           
+		pointer-events: none;         
+	}
+	#tooltip h4{
+		margin:0;
+		font-size:14px;
+	}
+	#tooltip{
+		background:rgba(0,0,0,0.9);
+		border:1px solid grey;
+		border-radius:5px;
+		font-size:12px;
+		width:auto;
+		padding:4px;
+		color:white;
+		opacity:0;
+	}
+	#tooltip table{
+		table-layout:fixed;
+	}
+	#tooltip tr td{
+		padding:0;
+		margin:0;
+	}
+	#tooltip tr td:nth-child(1){
+		width:50px;
+	}
+	#tooltip tr td:nth-child(2){
+		text-align:center;
+	}
+
+.dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+//#3e8e41
+}
+
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+        font-size: 21px;
+    }
+    .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+    
+.carousel-caption{position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}.carousel-caption .btn{text-shadow:none}
+
+</style>
+
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- NAVBAR SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+              <a class="navbar-brand" href="#"><font face="calibri" font size="9" style="position: absolute; top:30px; left:120px; width:200px; height:25px">arizon<strong>advocacy</strong></font></a>
+              <a class="navbar-brand" href="#"><font face="calibri" font size="4" font color="#a5a5a5" style="position: absolute; top:60px; left:120px; width:300px; height:25px">THE UNIVERSITY OF ARIZONA</font></a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+<!--                    <li><a href="#whyarizona-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">impact</font></a></li>
+                    <li><a href="#innovate-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">issues</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">engage</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">about</font></a></li>
+-->
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">About</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/staff.html">Staff</font></a>
+    <a href="http://u.arizona.edu/~stephaniezawada/contact.html">Contact</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/advocats.html">AdvoCats</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/join.html">Join</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/events.html">Events</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Engage</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/local.html">Local</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/state.html">State</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/federal.html">Federal</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/tribal.html">Tribal</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Issues</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/explore.html">Explore</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/innovate.html">Innovate</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/parallel.html">Parallels</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/synergy.html">Synergy</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px"><a href="http://u.arizona.edu/~stephaniezawada/index.html">Impact</a></font></button>
+</div>
+
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="just-sec" style="position: relative">
+        <div class="overlay">
+		<p><br>
+		<br>
+		We are the <div class="test"><b> innovators </b></div> and the <div class="test"><b> explorers</b></div>.</p>
+        	+ Vision Statement/Why UA? +
+        </div>
+</div>
+</div>
+</section>
+    <!--END JUST SECTION-->
+
+
+<!-- END HOMEPAGE SECTION -->
+
+<!--HOME SECTION-->
+<section id="home-sec">
+    <div id="home-sec">
+            <div class="container">
+		<h1>
+			<strong>Join the <mark>AdvoCats </mark> network to #FundAZStudents</strong>
+		</h1>
+
+		<div id="tooltip"></div><!-- div to hold tooltip. -->
+			<svg width="960" height="600" id="statesvg"></svg> 
+			<script src="uStates.js"></script> <!-- creates uStates. -->
+			<script src="http://d3js.org/d3.v3.min.js"></script>
+ 			<script>
+				function tooltipHtml(n, d){ 
+				    return "<h4>"+n+"</h4><table>"+
+				      "<tr><td>State:</td><td>"+(d.Name)+"</td></tr>"+
+				      "<tr><td>Total Advocats:</td><td>"+(d.Population_d)+"</td></tr>"+
+				      "</table>";
+				}
+				var color = d3.scale.linear()
+				      .range(["#ffffcc", "#800026"])
+				      .interpolate(d3.interpolateLab);
+      
+				d3.csv("Population2015.csv", function(error, data) {
+				    if (error) throw error;
+				    color.domain(d3.extent(data, function(d) { return d.Population; }));
+				    var sampleData ={};
+				  data.forEach(function(d) {
+ 				   d.Population = +d.Population;
+				d.Population_d = +d.Population_d;
+				    sampleData[d.State]={Name:d.Name, Population:d.Population, Population_d:d.Population_d, color:color(d.Population)}; 
+				  });
+				uStates.draw("#statesvg", sampleData, tooltipHtml);
+				});
+			</script>
+                </div>
+	</div>
+</div>
+</section>
+
+<!--HOME SECTION-->
+<section id="home-sec">
+    <div id="home-sec">
+            <div class="container">
+                <div class="col-md-8 pad-top scrollclass">
+                    <h1>
+                        <strong>It's time to <mark>Bear Down </mark>and #FundAZStudents </strong>
+			</h1>
+                    <p class="home-p">
+<br>
+Welcome to the headquarters for advocates of the University of Arizona! This website is dedicated to facilitating information to the Wildcat family on our efforts to be proponents for the UA before government. Here you can learn about the issues facing the university and how you can help by joining our AdvoCats grassroots team.
+You'll also find information on the 2017 Legislative Agenda, policy resources, briefing materials, news and upcoming events.
+                    </p>
+                </div>
+                <div class="col-md-8 img-home-side ">
+                    <img src="files/img/ua_rev_block_rgb.png" class="img-responsive" />
+                </div>
+                <div class="container video ">
+<br>
+<br>
+<iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FUWoA25JdcoA%3Fwmode%3Dtransparent%26feature%3Doembed&amp;wmode=transparent&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUWoA25JdcoA&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUWoA25JdcoA%2Fhqdefault.jpg&amp;key=e1208cbfb854483e8443b1ed081912ee&amp;type=text%2Fhtml&amp;schema=youtube" width="600" height="338" scrolling="no" frameborder="0" allowfullscreen></iframe>
+<br>
+<br>               
+		</div>
+        </div>
+    </div>
+</section>
+<!-- END HOME SECTION -->
+<section id="just-sec" style="position: relative">
+	<div class="col-md-8 pad-bottom scrollclass">
+		<script type="text/javascript">
+			jssor_1_slider_init = function() {
+			//Reference https://www.jssor.com/help/layer-animation.html
+				var jssor_1_SlideoTransitions = [
+					[{b:0,d:600,y:-290,e:{y:27}}],
+					[{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:87.50,t:-87.50}},{b:11000,d:500,c:{x:-87.50,t:87.50}}],
+					[{b:0,d:600,x:410,e:{x:27}}],
+					[{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
+					[{b:-1,d:1,c:{x:175.0,t:-175.0}},{b:0,d:800,c:{x:-175.0,t:175.0},e:{c:{x:7,t:7}}}],
+					[{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
+ 					[{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
+					[{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
+					[{b:2000,d:600,rY:30}],
+					[{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
+					[{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
+				];
+
+				var jssor_1_options = {
+					$AutoPlay: 1,
+					$Idle: 2000,
+					$CaptionSliderOptions: {
+					$Class: $JssorCaptionSlideo$,
+					$Transitions: jssor_1_SlideoTransitions,
+					$Breaks: [
+						[{d:2000,b:1000}]
+					]
+				},
+				
+				$ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$
+				}
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				/*#region responsive code begin*/
+				/*you can remove responsive code if you don't want the slider scales while window resizing*/
+
+				function ScaleSlider() {
+					var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+					if (refSize) {
+						refSize = Math.min(refSize, 600);
+						jssor_1_slider.$ScaleWidth(refSize);
+					}
+					else {
+						window.setTimeout(ScaleSlider, 30);
+					}
+				}
+				ScaleSlider();
+				$Jssor$.$AddEvent(window, "load", ScaleSlider);
+				$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+				$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+				/*#endregion responsive code end*/
+
+				var progressElement = document.getElementById("progress-element");
+
+				function ProgressChangeEventHandler(slideIndex, progress, progressBegin, idleBegin, idleEnd, progressEnd) {
+
+
+					if (progressEnd > 0) {
+						var progressPercent = progress / progressEnd * 100 + "%";
+						progressElement.style.width = progressPercent;
+					}
+				}
+
+            			jssor_1_slider.$On($JssorSlider$.$EVT_PROGRESS_CHANGE, ProgressChangeEventHandler);
+        };
+</script>
+
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+	<div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('../img/loading.gif') no-repeat 50% 50%; background-color: rgba(0, 0, 0, .7);"></div>
+	<div data-u="slides" style="cursor:default;position:relative;top:60px;left:0px;width:600px;height:300px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="files/img/dcvisit.jpg-large" />
+                <div data-u="caption" data-t="0" style="position:absolute;top:320px;left:30px;width:350px;height:30px;z-index:0;background-color:rgba(0,1,55,1);font-size:20px;color:#ffffff;line-height:30px;text-align:center;"><a href="http://arizonaalumni.com/event/washington-dc-welcome-dr-robert-robbins"><font face="calibri">Capitol Hill with President Robbins</font></a></div>
+            </div>
+            <div>
+                <img data-u="image" src="files/img/heard.jpg" />
+                <div data-u="caption" data-t="0" style="position:absolute;top:320px;left:30px;width:350px;height:30px;z-index:0;background-color:rgba(0,1,55,1);font-size:20px;color:#ffffff;line-height:30px;text-align:center;"><a href="https://gosar.house.gov/press-release/immediate-release-rep-gosar-introduces-bill-increase-access-hunting-and-recreation"><font face="calibri">HEARD Act Updates</font></a></div>
+            </div>
+            <div>
+                <img data-u="image" src="files/img/opticsbldg.jpg" />
+                <div data-u="caption" data-t="0" style="position:absolute;top:320px;left:30px;width:350px;height:30px;z-index:0;background-color:rgba(0,1,55,1);font-size:20px;color:#ffffff;line-height:30px;text-align:center;"><a href="https://azgovernor.gov/governor/blog/2017/02/arizona-pursues-biggest-bang-our-education-buck"><font face="calibri">Arizona's Growing Research Infrastructure</font></a></div>
+            </div>
+             <div id="progress-element" u="progress" style="position: absolute; left: 0; bottom: 20px; width: 0%; height: 5px; background-color: rgba(0,1,55,1); z-index: 100;"></div>
+        </div>
+
+        <style>
+            .jssora051 {display:block;position:absolute;cursor:pointer;}
+            .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+            .jssora051:hover {opacity:.8;}
+            .jssora051.jssora051dn {opacity:.5;}
+            .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+        </style>
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+        <!--#endregion Arrow Navigator Skin End -->
+
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+</div>
+
+
+<div class="col-md-8 pad-bottom scrollclass">
+	<h1 style="color:#7f0000;">
+		<strong><style="color:#7f0000;">Advocacy in Action</style></strong>
+	</h1>
+	<p class="home-q">
+<br>
+Stay informed with LegisLetter, the Arizona Advocacy newsletter, offering monthly news stories on legislation affecting UA, opportunities to engage with the AdvoCats, and information about UA advocacy events.
+<br>
+<br>
+<br>
+	</p>
+</div>
+</section>
+
+  <section id="location-sec">
+
+        <div class="overlay">
+        <div class="container ">
+            <div id="port-folio">
+                <div class="row ">
+                	<div class="col-md-4 col-sm-4">
+				<a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/UAAdvoCats">Tweets by UAAdvoCats</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+                	<div class="col-md-4 col-sm-4">
+     				<span class="filter" data-filter="WORDPRESS"><font color="white"  font face="calibri" font size="7" margin-left: 5px; text-align:center;> Text<br><mark>'BEARDOWN' </mark><br>to 52886 </font></span>                 
+  			</div>      
+ 			<div class="col-md-4 col-sm-4">
+				<div class="fb-page" data-href="https://www.facebook.com/UAAdvoCats/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UAAdvoCats/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UAAdvoCats/">UA AdvoCats</a></blockquote>
+			</div>
+		</div>
+	     </div>
+	</div>  
+
+</div>     
+ </section>
+</div>
+
+<!-- END LOCATION  SECTION -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="files/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="files/js/bootstrap.js"></script>
+    <!-- PRETTYPHOTO SCRIPTS -->
+    <script src="files/js/jquery.prettyPhoto.js"></script>
+    <!-- PORTFOLIO FILTER PLUGIN  -->
+    <script src="files/js/jquery.mixitup.min.js"></script>
+    <!-- NICE SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.nicescroll.min.js"></script>
+    <!-- EASING SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="files/js/custom.js"></script>
+<script src="files/js/jquery.min.js" type="text/javascript"></script>
+<script src="files/js/bootstrap.js"></script>
+<script src="files/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+<script src="files/js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.scrollTo-1.4.6-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.bxslider.min.js"></script>
+<script src="files/js/jquery.placeholder.js"></script>
+<script src="files/js/modernizr.custom.js"></script>
+<script src="files/js/toucheffects.js"></script>
+<script src="files/js/animations.js"></script>
+<script src="files/js/init.js"></script>
+</body>
+</html>

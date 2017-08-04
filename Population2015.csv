@@ -1,0 +1,52 @@
+State,Name,Population,Population_d
+AL,Alabama,0,0
+AK,Alaska,0,0
+AR,Arkansas,0,0
+AZ,Arizona,0.684893086,549
+CA,California,0.286532009,14
+CO,Colorado,0.119280314,3
+CT,Connecticut,0,0
+DC,Washington DC,0,1
+DE,Delaware,0,0
+FL,Florida,0,0
+GA,Georgia,0,0
+HI,Hawaii,0,0
+ID,Idaho,0,0
+IL,Illinois,0,1
+IN,Indiana,0,0
+IA,Iowa,0,0
+KS,Kansas,0,0
+KY,Kentucky,0,0
+LS,Louisiana,0,0
+ME,Maine,0,0
+MD,Maryland,0,1
+MA,Massachusets,0,1
+MI,Michigan,0,0
+MN,Minnesota,0,0
+MS,Mississippi,0,1
+MO,Missouri,0,0
+MT,Montana,0,0
+NE,Nebraska,0,0
+NV,Nevada,0,0
+NH,New Hampshire,0,0
+NJ,New Jersey,0,0
+NM,New Mexico,0.075257499,2
+NY,New York,0.119280314,3
+NC,North Carolina,0,1
+ND,North Dakota,0,0
+OH,Ohio,0,0
+OK,Oklahoma,0,0
+OR,Oregon,0,0
+PA,Pennsylvania,0,0
+RI,Rhode Island,0,0
+SC,South Carolina,0,0
+SD,South Dakota,0,0
+TN,Tennessee,0,0
+TX,Texas,0.119280314,3
+UT,Utah,0,0
+VT,Vermont,0,0
+VA,Virginia,0.150514998,4
+WA,Washington,0,1
+WV,West Virginia,0,0
+WI,Wisconsin,0,0
+WY,Wyoming,0,0

@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 27 Jul 2017 17:46:15 at http://azredistricting.org/districtlocator/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://azredistricting.org/districtlocator/ -O1 "C:\My Web Sites\district" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:46:32	Error: 	"Forbidden" (403) at link translate.google.com/translate_a/element.js?cb=googleTranslateElementInit (from azredistricting.org/districtlocator/)
+17:46:32	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/style/ajxlightbox2_files/outline.png (from azredistricting.org/districtlocator/style/ajxlightbox2.css)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/style/ajxlightbox2_files/previous.png (from azredistricting.org/districtlocator/style/ajxlightbox2.css)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/style/ajxlightbox2_files/next.png (from azredistricting.org/districtlocator/style/ajxlightbox2.css)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/style/ajxlightbox2_files/loading.gif (from azredistricting.org/districtlocator/style/ajxlightbox2.css)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/style/ajxlightbox2_files/close.png (from azredistricting.org/districtlocator/style/ajxlightbox2.css)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/POST (from azredistricting.org/DistrictLocator/WebResource.axd?d=TQj6QzvZG266QiCv9mrN6T5vhGQBhq7Tnau_daYVopBnhXLZwjI8chEwneR5lqky7p0MHcKoRxiJxqPvUbo2Qi-X7DvfieY-9bwezmM9BBE1&t=636283245200000000)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/Firefox/ (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=ON5ZotvQe9sH4ocescTASd7ZJhb1Byux4WfFAvkgrA5ufwfV_DaoHqntew_zZ0e-hMpSMNEoKUmmAVopST47b2NJLIcURwj43qQAMRjdXcRnVDX7_rxJnFpC5ep1yyRjpY-tNGejXaH84mkNAkCLXg2&t=ffffffffec54f2d7)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/AppleWebKit/ (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=ON5ZotvQe9sH4ocescTASd7ZJhb1Byux4WfFAvkgrA5ufwfV_DaoHqntew_zZ0e-hMpSMNEoKUmmAVopST47b2NJLIcURwj43qQAMRjdXcRnVDX7_rxJnFpC5ep1yyRjpY-tNGejXaH84mkNAkCLXg2&t=ffffffffec54f2d7)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/Opera/ (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=ON5ZotvQe9sH4ocescTASd7ZJhb1Byux4WfFAvkgrA5ufwfV_DaoHqntew_zZ0e-hMpSMNEoKUmmAVopST47b2NJLIcURwj43qQAMRjdXcRnVDX7_rxJnFpC5ep1yyRjpY-tNGejXaH84mkNAkCLXg2&t=ffffffffec54f2d7)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/MicrosoftAjaxWebForms.js (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=nFnzIZUZ3LbO3QeRGap7zXxZZD83sUvxbphEjhm6nibTZanVkIqmwgLSc6ry03HvJZH0SnRO_E7Nq7NWHLVVOKPCSwnNsCTr3i48Xh-wX2mFfY6-d2ZvRHAiKDRRnoytVyJZDkS5X8JS6mv23K_ipA2&t=ffffffffec54f2d7)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/MicrosoftAjaxSerialization.js (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=nFnzIZUZ3LbO3QeRGap7zXxZZD83sUvxbphEjhm6nibTZanVkIqmwgLSc6ry03HvJZH0SnRO_E7Nq7NWHLVVOKPCSwnNsCTr3i48Xh-wX2mFfY6-d2ZvRHAiKDRRnoytVyJZDkS5X8JS6mv23K_ipA2&t=ffffffffec54f2d7)
+17:46:33	Error: 	"Not Found" (404) at link azredistricting.org/districtlocator/MicrosoftAjaxNetwork.js (from azredistricting.org/DistrictLocator/ScriptResource.axd?d=nFnzIZUZ3LbO3QeRGap7zXxZZD83sUvxbphEjhm6nibTZanVkIqmwgLSc6ry03HvJZH0SnRO_E7Nq7NWHLVVOKPCSwnNsCTr3i48Xh-wX2mFfY6-d2ZvRHAiKDRRnoytVyJZDkS5X8JS6mv23K_ipA2&t=ffffffffec54f2d7)
+
+HTTrack Website Copier/3.49-2 mirror complete in 18 seconds : 49 links scanned, 35 files written (684551 bytes overall) [349772 bytes received at 19431 bytes/sec], 510486 bytes transferred using HTTP compression in 4 files, ratio 18%
+(13 errors, 0 warnings, 0 messages)

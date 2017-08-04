@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--SITE SET-UP--!>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if Internet Explorer]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <![end]-->
+<!-- WEBSITE TITLE -->
+    <title>University of Arizona Advocacy</title>
+
+<!-- CSS FILE LINKS -->
+    <link href="files/css/bootstrap.css" rel="stylesheet" />
+    <link href="files/css/style.css" rel="stylesheet" />
+<!-- SITE GOOGLE FONT API -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+
+<style>
+svg{
+    display: block;
+    margin: auto;
+}
+  .state{
+    fill: none;
+    stroke: #a9a9a9;
+    stroke-width: 1;
+  }
+  .state:hover{
+    fill-opacity:0.5;
+  }
+.test{
+	display:inline;
+	color: #ffffff;
+}
+  #tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  #tooltip h4{
+    margin:0;
+    font-size:14px;
+  }
+  #tooltip{
+    background:rgba(0,0,0,0.9);
+    border:1px solid grey;
+    border-radius:5px;
+    font-size:12px;
+    width:auto;
+    padding:4px;
+    color:white;
+    opacity:0;
+  }
+  #tooltip table{
+    table-layout:fixed;
+  }
+  #tooltip tr td{
+    padding:0;
+    margin:0;
+  }
+  #tooltip tr td:nth-child(1){
+    width:50px;
+  }
+  #tooltip tr td:nth-child(2){
+    text-align:center;
+  }
+
+.dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+//#3e8e41
+}
+
+</style>
+
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- NAVBAR SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+              <a class="navbar-brand" href="#"><font face="calibri" font size="9" style="position: absolute; top:30px; left:120px; width:200px; height:25px">arizon<strong>advocacy</strong></font></a>
+              <a class="navbar-brand" href="#"><font face="calibri" font size="4" font color="#a5a5a5" style="position: absolute; top:60px; left:120px; width:300px; height:25px">THE UNIVERSITY OF ARIZONA</font></a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+<!--                    <li><a href="#whyarizona-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">impact</font></a></li>
+                    <li><a href="#innovate-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">issues</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">engage</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">about</font></a></li>
+-->
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">About</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/staff.html">Staff</font></a>
+    <a href="http://u.arizona.edu/~stephaniezawada/contact.html">Contact</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/advocats.html">AdvoCats</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/join.html">Join</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/events.html">Events</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Engage</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/local.html">Local</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/state.html">State</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/federal.html">Federal</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/tribal.html">Tribal</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Issues</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/explore.html">Explore</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/innovate.html">Innovate</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/parallel.html">Parallels</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/synergy.html">Synergy</a>
+  </div>
+</div>
+
+<li><a href="http://u.arizona.edu/~stephaniezawada/index.html"><font face="calibri" font size="4.5" style="top:45px">Impact</font></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <!--END ADVANCE SECTION-->
+    <div id="just-sec" style="position: relative">
+        <div class="overlay">
+<p><br>
+<br>
+
+Bear Down. Be Heard.
+
+<br> 
+<div class="explore"><i>Become an advocat today.</i></div>
+
+        </div>
+    </div>
+    <!--END JUST SECTION-->
+
+<!--HOME SECTION-->
+<section id="home-sec">
+    <div id="home-sec">
+            <div class="container">
+<div class="storyonehead">
+<br>
+                        <strong>Who are the AdvoCats?</strong>
+</div>
+                </div>
+
+  	<div class="container">
+<div class="storyone">
+Alumni, parents, students, community supporters, and everyone who wants to see a successful and strong university that is supported by the State of Arizona.
+
+</div>
+
+                </div>
+
+        </div>
+    </div>
+</section>
+<!-- END HOME SECTION -->
+
+<!--HOME SECTION-->
+<section id="home-sec">
+    <div id="home-sec">
+            <div class="container">
+<div class="storyonehead">
+                        <strong>What do the AdvoCats do?</strong>
+</div>
+                </div>
+
+  	<div class="container">
+<div class="storyone">
+During the legislative session, it is imperative that the UA has a strong and effective voice to convince legislators of the need to support our policy agenda. UA administrators and government relations staff spend countrless hours meeting with senators and representatives and testifying to various committiees. The AdvoCats assist by working with the government relations staff to augment those efforts by meeting with legislators and the governor's staff, sending letters of support, making phone calls, and recruiting new AdvoCats.
+
+</div>
+
+                </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- LOCATION SECTION -->
+  <section id="location-sec">
+        <div class="container ">
+            <div id="port-folio">
+                <div class="row ">
+                	<div class="col-md-4 col-sm-4">
+				<a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/UAAdvoCats">Tweets by UAAdvoCats</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+                	<div class="col-md-4 col-sm-4">
+     				<span class="filter" data-filter="WORDPRESS"><font color="white"  font face="calibri" font size="7" margin-left: 5px; text-align:center;> Text<br><mark>'BEARDOWN' </mark><br>to 52886 </font></span>                 
+  			</div>      
+ 			<div class="col-md-4 col-sm-4">
+				<div class="fb-page" data-href="https://www.facebook.com/UAAdvoCats/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UAAdvoCats/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UAAdvoCats/">UA AdvoCats</a></blockquote>
+			</div>
+		</div>
+	     </div>
+	</div>       
+ </section>
+<!-- END LOCATION  SECTION -->
+
+
+
+
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="files/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="files/js/bootstrap.js"></script>
+    <!-- PRETTYPHOTO SCRIPTS -->
+    <script src="files/js/jquery.prettyPhoto.js"></script>
+    <!-- PORTFOLIO FILTER PLUGIN  -->
+    <script src="files/js/jquery.mixitup.min.js"></script>
+    <!-- NICE SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.nicescroll.min.js"></script>
+    <!-- EASING SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="files/js/custom.js"></script>
+<script src="files/js/jquery.min.js" type="text/javascript"></script>
+<script src="files/js/bootstrap.js"></script>
+<script src="files/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+<script src="files/js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.scrollTo-1.4.6-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.bxslider.min.js"></script>
+<script src="files/js/jquery.placeholder.js"></script>
+<script src="files/js/modernizr.custom.js"></script>
+<script src="files/js/toucheffects.js"></script>
+<script src="files/js/animations.js"></script>
+<script src="files/js/init.js"></script>
+</body>
+</html>                

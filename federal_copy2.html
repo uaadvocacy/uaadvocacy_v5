@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--SITE SET-UP--!>
+<head>
+<base href="http://act.commoncause.org/site/PageServer?pagename=sunlight_advocacy_list_page" />
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content=" " />
+<meta name="Description" content="" />
+<meta name="Robots" content="index, follow" />
+
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if Internet Explorer]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <![end]-->
+<!-- WEBSITE TITLE -->
+    <title>University of Arizona Advocacy</title>
+
+<!-- CSS FILE LINKS -->
+    <link href="files/css/bootstrap.css" rel="stylesheet" />
+    <link href="files/css/style.css" rel="stylesheet" />
+<!-- SITE GOOGLE FONT API -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="../../../js/jquery-1.10.2.js"></script>
+    <script src="../../../js/scripts.js"></script>
+    <title>Legislator Finder</title>
+
+
+<script type="text/javascript" src="../yui3/yui/yui-min.js"></script><noscript>&nbsp;</noscript>
+<script type="text/javascript" src="../js/convio/modules.js?version=2.9"></script><noscript>&nbsp;</noscript>
+<script type="text/javascript">
+var Y = YUI({base: '../yui3/',
+insertBefore: 'yui_marker_loader_css', // insert all YUI module css before customstyle so it can be overridden
+debug: false, 
+modules: getModules('../', 'convio', false)});
+</script><noscript>&nbsp;</noscript>
+
+
+<script type="text/javascript" src="../js/utils.js"></script><noscript>&nbsp;</noscript>
+
+<script type="text/javascript" src="../js/obs_comp_rollup.js"></script><noscript>&nbsp;</noscript>
+
+
+<link href="../css/themes/default.css" rel="stylesheet" type="text/css" />
+<link href="../css/themes/alphacube.css" rel="stylesheet" type="text/css"/>
+
+
+<link href="../css/UserGlobalStyle.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<link rel="stylesheet" type="text/css" id="yui_marker_loader_css" />
+<link href="../css/CustomStyle.css" rel="stylesheet" type="text/css" />
+<link href="../css/CustomWysiwygStyle.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+<meta name="CnvHeaderVersion" content="v5.0" />
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://secure2.convio.net/comcau/favicon.ico" />
+<script src="//cdn.optimizely.com/js/3223810450.js"></script>
+<script src="//c.shpg.org/214/sp.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Open Graph for Advocacy -->
+
+<!-- Not Advocacy -->
+
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="screen">
+
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//shareprogress-deliver.herokuapp.com/214/sp.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+        <script src="../assets/js/placeholders.js"></script>
+    <![endif]-->
+    <script src="../assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <style type="text/css">.fancybox-margin{margin-right:15px;}</style>
+
+<!-- APP id is 19 -->
+
+
+</head>
+
+
+<style>
+svg{
+    display: block;
+    margin: auto;
+}
+  .state{
+    fill: none;
+    stroke: #a9a9a9;
+    stroke-width: 1;
+  }
+  .state:hover{
+    fill-opacity:0.5;
+  }
+.test{
+	display:inline;
+	color: #ffffff;
+}
+  #tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  #tooltip h4{
+    margin:0;
+    font-size:14px;
+  }
+  #tooltip{
+    background:rgba(0,0,0,0.9);
+    border:1px solid grey;
+    border-radius:5px;
+    font-size:12px;
+    width:auto;
+    padding:4px;
+    color:white;
+    opacity:0;
+  }
+  #tooltip table{
+    table-layout:fixed;
+  }
+  #tooltip tr td{
+    padding:0;
+    margin:0;
+  }
+  #tooltip tr td:nth-child(1){
+    width:50px;
+  }
+  #tooltip tr td:nth-child(2){
+    text-align:center;
+  }
+
+.dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 1, 55, 1.0);
+//#3e8e41
+}
+
+.container1 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container1:before,
+.container1:after {
+  display: table;
+padding-bottom:20px;
+  content: " ";
+}
+
+.container1:after {
+  clear: both;
+}
+
+.container1:before,
+.container1:after {
+  display: table;
+  content: " ";
+}
+
+.container1:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .container1 {
+    max-width: 728px;
+  }
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-push-3 {
+    left: 25%;
+  }
+  .col-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-push-6 {
+    left: 50%;
+  }
+  .col-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-push-9 {
+    left: 75%;
+  }
+  .col-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-pull-3 {
+    right: 25%;
+  }
+  .col-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-pull-6 {
+    right: 50%;
+  }
+  .col-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-pull-9 {
+    right: 75%;
+  }
+  .col-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-pull-11 {
+    right: 91.66666666666666%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container1 {
+    max-width: 940px;
+  }
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  .col-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-offset-3 {
+    margin-left: 25%;
+  }
+  .col-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-offset-6 {
+    margin-left: 50%;
+  }
+  .col-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-offset-9 {
+    margin-left: 75%;
+  }
+  .col-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container1 {
+    max-width: 1170px;
+  }
+}
+
+.container1 {
+  margin-left: 33%;
+  margin-right:33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+</style>
+
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- NAVBAR SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+              <a class="navbar-brand" href="#"><font face="calibri" font size="9" style="position: absolute; top:30px; left:120px; width:200px; height:25px">arizon<strong>advocacy</strong></font></a>
+              <a class="navbar-brand" href="#"><font face="calibri" font size="4" font color="#a5a5a5" style="position: absolute; top:60px; left:120px; width:300px; height:25px">THE UNIVERSITY OF ARIZONA</font></a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+<!--                    <li><a href="#whyarizona-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">impact</font></a></li>
+                    <li><a href="#innovate-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">issues</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">engage</font></a></li>
+                    <li><a href="#impact-sec"><font face="calibri" font size="4.5" style="position: relative; top:45px">about</font></a></li>
+-->
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">About</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/staff.html">Staff</font></a>
+    <a href="http://u.arizona.edu/~stephaniezawada/contact.html">Contact</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/advocats.html">AdvoCats</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/join.html">Join</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/events.html">Events</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Engage</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/local.html">Local</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/state.html">State</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/federal.html">Federal</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/tribal.html">Tribal</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn"><font face="calibri" font size="4.5" style="top:45px">Issues</font></button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="http://u.arizona.edu/~stephaniezawada/explore.html">Explore</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/innovate.html">Innovate</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/parallel.html">Parallels</a>
+    <a href="http://u.arizona.edu/~stephaniezawada/synergy.html">Synergy</a>
+  </div>
+</div>
+
+<li><a href="http://u.arizona.edu/~stephaniezawada/index.html"><font face="calibri" font size="4.5" style="top:45px">Impact</font></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <!--END ADVANCE SECTION-->
+    <div id="just-sec" style="position: relative">
+        <div class="overlay">
+<p><br>
+
+<div class="explore"><font size="7"><i>Find Your Representatives in the U.S. Congress.</i></font></div>
+
+        <div id=container">
+        <div id="description">
+          <div class="wrapper">
+            <h1 class="page-title">Find Your Representatives</h1>
+            <div class="content">
+		<p>Find your representatives at the Arizona Capitol and on Capitol Hill.</p>
+  <p>Join <a href="http://u.arizona.edu/~stephaniezawada/advocats.html">Advocats</a> to promote UA interests at the local, state, and federal legislative communities. Sign up for <a href="http://u.arizona.edu/~stephaniezawada/sign-up.html">LegisLetter</a></p> 
+        <form id="cons_address_details">
+                <div class="field address_line">
+                  <label for="cons_street1">Street 1: </label>
+                  <input type="text" id="cons_street1" maxlength="128" name="cons_street1" size="32" value="">
+                </div>
+                <div class="field address_line">
+                  <label for="cons_street2">Street 2: </label>
+                  <input type="text" maxlength="128" size="32" value="" id="cons_street2" name="cons_street2">
+                </div>
+                <div class="field address_line">
+                  <label for="cons_city">City: </label>
+                  <input type="text" id="cons_city" maxlength="64" name="cons_city" size="32" value="">
+                </div>
+                <div class="field address_line">
+                  <label for="cons_state">State / Province: </label>
+                  <select id="cons_state" name="cons_state" size="1" class="styled-select">
+                  
+                    <option></option>
+                    <option value="AK">AK</option>
+                    <option value="AL">AL</option>
+                    <option value="AR">AR</option>
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="IA">IA</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="MA">MA</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MO">MO</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="NE">NE</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VA">VA</option>
+                    <option value="VT">VT</option>
+                    <option value="WA">WA</option>
+                    <option value="WI">WI</option>
+                    <option value="WV">WV</option>
+                    <option value="WY">WY</option>
+                    <option value="AS">AS</option>
+                    <option value="FM">FM</option>
+                    <option value="GU">GU</option>
+                    <option value="MH">MH</option>
+                    <option value="MP">MP</option>
+                    <option value="PR">PR</option>
+                    <option value="PW">PW</option>
+                    <option value="VI">VI</option>
+                    <option value="AA">AA</option>
+                    <option value="AE">AE</option>
+                    <option value="AP">AP</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="NS">NS</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QC">QC</option>
+                    <option value="SK">SK</option>
+                    <option value="YT">YT</option>
+                    <option value="None">None</option>
+                  
+                  </select>
+                </div>
+                <div class="field address_line required">
+                  <label for="cons_zip">ZIP / Postal Code: <span style="position: absolute; left: -9999px;">Required</span></label>
+                  <input type="text" id="cons_zip" maxlength="40" name="cons_zip" size="18" value="">
+                </div>
+                <div class="field">
+                  <input type="submit" id="cons_address_details_submit" class="button" value="Submit">
+                </div>
+              </form>
+              <div id="validated_address_details" class="row" style="display:none;">
+                Displaying government officials for:<br/><span id="v_formatted_address"></span><br/>
+                <input type="button" id="change_address" class="button" onclick="sunlight.showAddressForm();" value="Change Address">
+              </div>
+              <div id="government_officials" class="row" style="display:none;">
+                <div class="official-row heading"><a href="#federal_legislators">Federal Legislators</a>&nbsp;|&nbsp;<a href="#state_legislators">State Legislators</a></div>
+                <div class="official-row clearfix" id="whitehouse_legislators"><div id="federal_official_president" class="federal official-list">
+  <img class="federal official-thumb" src="https://secure2.convio.net/comcau/images/content/pagebuilder/president-trump.jpg" alt="Donald Trump photo">
+  <div class="federal official-short">
+    <div class="federal official-more"><a href="PageServer?pagename=sunlight_advocacy_official_president" target="_blank">More <span>&#8250;</span></a></div>
+    <div class="federal official-name">Donald Trump</div>
+    <div class="federal official-party">President (R)</div>
+    <div class="federal official-phone">
+      <div class="official-label official-phone">Phone:</div>
+      <div class="official-value official-phone">202-456-1111</div>
+    </div>
+    <div class="federal official-contact">
+      <div class="official-label official-contact">Email:</div>
+      <div class="official-value official-contact"><a href="https://www.whitehouse.gov/contact" target="_blank">Contact page</a></div>
+    </div>
+    <div class="federal official-website">
+      <div class="official-label official-website">Website:</div>
+      <div class="official-value official-website"><a href="https://www.whitehouse.gov/administration/president-trump" target="_blank">Homepage</a></div>
+    </div>
+  </div>
+</div>
+<div id="federal_official_vice_president" class="federal official-list">
+  <img class="federal official-thumb" src="https://secure2.convio.net/comcau/images/content/pagebuilder/vp-pence.jpg" alt="Mike Pence photo">
+  <div class="federal official-short">
+    <div class="federal official-more"><a href="PageServer?pagename=sunlight_advocacy_official_vice_president" target="_blank">More <span>&#8250;</span></a></div>
+    <div class="federal official-name">Mike Pence</div>
+    <div class="federal official-party">Vice President (R)</div>
+    <div class="federal official-phone">
+      <div class="official-label official-phone">Phone:</div>
+      <div class="official-value official-phone">202-456-7000</div>
+    </div>
+    <div class="federal official-contact">
+      <div class="official-label official-contact">Email:</div>
+      <div class="official-value official-contact"><a href="https://www.whitehouse.gov/contact" target="_blank">Contact page</a></div>
+    </div>
+    <div class="federal official-website">
+      <div class="official-label official-website">Website:</div>
+      <div class="official-value official-website"><a href="https://www.whitehouse.gov/administration/vice-president-pence" target="_blank">Homepage</a></div>
+    </div>
+  </div>
+</div>
+<!--
+<div id="federal_official_first_lady" class="federal official-list">
+  <img class="federal official-thumb" src="http://advocacyrelay.convio.net/images/advocacy/legislators/MichelleObama.jpg" alt="Michelle Obama photo">
+  <div class="federal official-short">
+    <div class="federal official-more"><a href="PageServer?pagename=sunlight_advocacy_official_first_lady" target="_blank">More <span>&#8250;</span></a></div>
+    <div class="federal official-name">Michelle Obama</div>
+    <div class="federal official-party">First Lady (D)</div>
+    <div class="federal official-phone">
+      <div class="official-label official-phone">Phone:</div>
+      <div class="official-value official-phone">202-456-1414</div>
+    </div>
+    <div class="federal official-contact">
+      <div class="official-label official-contact">Email:</div>
+      <div class="official-value official-contact"><a href="mailto:first.lady@whitehouse.gov" target="_blank">first.lady@whitehouse.gov</a></div>
+    </div>
+  </div>
+</div>
+-->
+</div>
+                <div class="official-row clearfix" id="federal_legislators"></div>
+                <div class="official-row clearfix" id="state_legislators"></div>
+              </div>
+            </div>  <!-- .content -->
+          </div>  <!-- .wrapper -->
+        </div>  <!-- #description -->
+ 
+      <div class="col2">
+
+
+
+  
+
+
+
+ 
+    </div>
+
+<style type="text/css">
+nav.side li.current ul li.inSameFolder a {
+  background:#0092c8;
+}
+#cons_address_details {
+  border:1px solid #808080;
+  padding:16px;
+  width:80%;
+}
+#cons_address_details .field.address_line {
+  margin-bottom:16px;
+}
+#cons_address_details .field label {
+  display:block;
+  color:#0192C9;
+}
+#cons_address_details .field.address_line > input {
+  width:100%;
+}
+#cons_zip {
+  width:auto;
+}
+#validated_address_details {
+  margin-bottom:13px;
+}
+#v_formatted_address {
+  color:#808080;
+}
+#government_officials {
+  border:1px solid #808080;
+  padding:16px;
+}
+#whitehouse_legislators, #federal_legislators, #state_legislators {
+  background:none repeat scroll 0 0 #EBEBEB;
+  width:100%;
+}
+#government_officials .official-list {
+  border-bottom:2px solid #FFFFFF;
+  margin:4px 0 4px 0;
+  padding:4px;
+  width:100%;
+}
+#government_officials .official-list .official-thumb {
+  display:inline-block;
+  vertical-align:top;
+  width:19%;
+}
+#government_officials .official-list .official-short {
+  display:inline-block;
+  vertical-align:top;
+  margin-left:2%;
+  margin-right:1%;
+  width:76%;
+}
+#government_officials .official-list .official-name {
+  font-weight:bold;
+}
+#government_officials .official-list .official-more {
+  float:right;
+}
+#government_officials .official-list .official-more span {
+  font-weight:bold;
+}
+#government_officials .official-list .official-party {
+  font-size:14px;
+  line-height:14px;
+  margin-bottom:10px;
+  color:gray;
+}
+#government_officials .official-list .official-label {
+  display:inline-block;
+  width:28%;
+  color:gray;
+}
+#government_officials .official-list .official-value {
+  display:inline-block;
+  width:70%;
+}
+#official_data .official-photo {
+  float:left;
+  clear:left;
+  width:40%;
+  margin-right:2%;
+}
+#official_party {
+  color:#BE2F35;
+  font-family:'helvetica_neue_600','Helvetica Neue',Arimo,Sans-serif;
+  font-size:24px;
+  font-weight:normal;
+  line-height:1.1;
+  margin:0 0 20px;
+  text-rendering:optimizelegibility;
+}
+#official_data .official-data {
+  float:left;
+  clear:right;
+  margin:5px 0 10px;
+}
+#official_data .official-data.official-short {
+  width:56%;
+}
+#official_data .official-data.official-long {
+  width:100%;
+  clear:both;
+}
+#official_data .official-data .official-label {
+  display:inline-block;
+  font-weight:bold;
+  width:33%;
+  margin-right:2%;
+  vertical-align:top;
+}
+#official_data .official-data .official-value {
+  display:inline-block;
+  width:62%;
+}
+#official_data .official-data a.official-data-button {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  display:inline-block;
+  background:#BE2F35;
+  color:#FFFFFF;
+  font-size:20px;
+  text-shadow:1px 1px 1px #222222;
+  border:none;
+  line-height:20px;
+  height:50px;
+  vertical-align:middle;
+  outline:none;
+  padding:15px 30px;
+}
+#official_data .official-data a.official-data-button:after {
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  border-top:25px solid transparent;
+  border-bottom:25px solid transparent;
+  border-left:15px solid #BE2F35;
+  margin:-15px 0 0 30px;
+}
+#official_data .official-data a.official-data-button:hover {
+  background:#A42429;
+}
+#official_data .official-data a.official-data-button:hover:after {
+  border-left:15px solid #A42429;
+}
+#official_data .official-data.official-social .official-label,
+#official_data .official-data.official-address .official-label,
+#official_data .official-data.official-social .official-value,
+#official_data .official-data.official-address .official-value {
+  display:block;
+  width:100%;
+}
+#official_bills_pages, #official_bills_sort {
+  float:left;
+  clear:left;
+}
+#official_bills_paginate_top, #official_bills_paginate_bottom, #official_bills_num_shown {
+  float:right;
+  clear:right;
+}
+#official_bills_pagination div, #official_bills_paginate_bottom, #official_bills_pagination select#official_bills_display_num {
+  font-size:14px;
+  height:24px;
+  line-height:24px;
+  padding:2px 0;
+  vertical-align:text-bottom;
+}
+#official_bills_pagination select#official_bills_display_num {
+  height:20px;
+  padding:0 4px 0 0;
+  appearance:menu;
+  -moz-appearance:menulist;
+  -webkit-appearance:menulist;
+  background:#ffffff;
+}
+#official_bills_pagination select#official_bills_display_num option {
+  font-size:14px;
+  height:20px;
+  line-height:20px;
+  padding:0;
+}
+#official_bills_pagination, #official_bills_paginate_bottom {
+  line-height:14px;
+  font-size:14px;
+}
+#official_bills_list .official-bill.official-bill-hidden {
+  display:none;
+}
+#official_bills_list .official-bill {
+  margin:5px 0 13px;
+}
+#official_bills_list .official-bill > div {
+  padding:2px 0 4px;
+}
+#official_bills_list .official-bill .official-bill-label {
+  font-weight:bold;
+}
+#official_bills_list .official-bill .official-bill-introduced {
+  font-size:14px;
+  padding-left:8px;
+}
+#official_bills_list .official-bill .official-bill-summary {
+  font-size:16px;
+  padding-left:8px;
+}
+#official_bills_list .official-bill .official-bill-urls {
+  font-size:16px;
+  padding-left:8px;
+}
+#official_bills_list .official-bill .official-bill-urls .official-bill-url {
+  padding-left:16px;
+}
+#official_committees_list .official-committee {
+  font-size:16px;
+  padding:4px 0px;
+}
+#official_committees_list .official-subcommittee {
+  padding:0px 0px 4px 8px;
+}
+#official_committees_list .official-committee .official-committee-nolink {
+  color:#1f508f;
+}
+#official_contributions #official_contributions_cycle, #official_contributions #official_contributions_loading, #official_contributions #official_contributions_none {
+  font-size:14px;
+  line-height:20px;
+  padding:4px 0px;
+}
+#official_contributions #official_contributions_cycle select#official_contributions_cycle_select {
+  height:20px;
+  font-size:14px;
+  line-height:14px;
+  appearance:menu;
+  -moz-appearance:menulist;
+  -webkit-appearance:menulist;
+  background:#ffffff;
+  padding:0 4px 0 0;
+}
+#official_contributions .official-contributions {
+  background:none repeat scroll 0 0 #f1f1f1;
+  border:1px solid #f8f8f8;
+  padding:10px;
+  vertical-align:middle;
+}
+#official_contributions .official-contributions h4 {
+  margin-bottom:0px;
+  font-size:18px;
+}
+#official_contributions #official_contributions_local.official-contributions {
+  background:none repeat scroll 0 0 #71bfdb;
+  border:1px solid #f8f8f8;
+}
+#official_contributions .official-contributions .official-contributions-pie {
+  width:100%;
+  height:250px;
+}
+#official_contributions .official-contributions .official-contributions-pie.jqplot-target {
+  font-family:helvetica_neue_400, Helvetica, Verdana, Arial;
+  font-size:18px;
+  line-height:1.5em;
+}
+#official_contributions .official-contributions .official-contributions-wide {
+  width:100%;
+  margin-top:10px;
+}
+#official_contributions table.jqplot-table-legend {
+  border:1px solid #f8f8f8;
+}
+#official_contributions td.jqplot-table-legend {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:1px solid #f8f8f8;
+  background-color:inherit;
+  height:auto;
+  padding:4px;
+}
+#official_contributions .official-contributor {
+  font-size:16px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 991px) {
+  .main-container.twocol { width:960px; }
+  .col1 { width:599px; }
+  .col2 { width:360px; }
+}
+
+</style>
+<script type="text/javascript" src="../assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="PageServer?pagename=sunlight_advocacy_scripts&pgwrap=n"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+  $('#cons_address_details').submit(function(e) {
+    e.preventDefault();
+    sunlight.validateAddressForm();
+    return false;
+  });
+  sunlight.getStatesMetadata();
+  sunlight.getSunlightCookie();
+});
+//]]>
+</script>
+
+<!--/container-->
+
+<!--/#page-->
+
+
+</div>
+</div>
+
+        </div>
+    </div>
+    <!--END JUST SECTION-->
+
+<!--HOME SECTION-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- LOCATION SECTION -->
+  <section id="location-sec">
+        <div class="container ">
+            <div id="port-folio">
+                <div class="row ">
+                	<div class="col-md-4 col-sm-4">
+				<a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/UAAdvoCats">Tweets by UAAdvoCats</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+                	<div class="col-md-4 col-sm-4">
+     				<span class="filter" data-filter="WORDPRESS"><font color="white"  font face="calibri" font size="7" margin-left: 5px; text-align:center;> Text<br><mark>'BEARDOWN' </mark><br>to 52886 </font></span>                 
+  			</div>      
+ 			<div class="col-md-4 col-sm-4">
+				<div class="fb-page" data-href="https://www.facebook.com/UAAdvoCats/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UAAdvoCats/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UAAdvoCats/">UA AdvoCats</a></blockquote>
+			</div>
+		</div>
+	     </div>
+	</div>       
+ </section>
+<!-- END LOCATION  SECTION -->
+
+
+
+
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="files/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="files/js/bootstrap.js"></script>
+    <!-- PRETTYPHOTO SCRIPTS -->
+    <script src="files/js/jquery.prettyPhoto.js"></script>
+    <!-- PORTFOLIO FILTER PLUGIN  -->
+    <script src="files/js/jquery.mixitup.min.js"></script>
+    <!-- NICE SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.nicescroll.min.js"></script>
+    <!-- EASING SCROLL SCRIPTS   -->
+    <script src="files/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="files/js/custom.js"></script>
+<script src="files/js/jquery.min.js" type="text/javascript"></script>
+<script src="files/js/bootstrap.js"></script>
+<script src="files/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+<script src="files/js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.scrollTo-1.4.6-min.js" type="text/javascript"></script>
+<script src="files/js/jquery.bxslider.min.js"></script>
+<script src="files/js/jquery.placeholder.js"></script>
+<script src="files/js/modernizr.custom.js"></script>
+<script src="files/js/toucheffects.js"></script>
+<script src="files/js/animations.js"></script>
+<script src="files/js/init.js"></script>
+</body>
+</html>
